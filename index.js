@@ -1,3 +1,7 @@
+app.post("/", async (req, res) => {
+  console.log("🔥 Получен запрос от Telegram:", JSON.stringify(req.body)); // <-- ДОБАВЬ ЭТО
+  try {
+    ...
 const express = require("express");
 const fetch = require("node-fetch");
 const app = express();
